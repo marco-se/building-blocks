@@ -1,0 +1,4 @@
+fastapi
+pydantic
+dependency-injector
+fastapi[standard] # only when you want to start the app with fastapi dev app.py

@@ -1,0 +1,2 @@
+from API_LIBRARY.core.manager_commands.command_init import CommandInit
+from API_LIBRARY.core.manager_commands.commands.hello_command import HelloCommand
