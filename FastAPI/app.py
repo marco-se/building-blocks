@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from API_LIBRARY.core.container import CommandContainer, ServicesContainer
@@ -23,3 +24,6 @@ app.add_middleware(
 from API_VIEWS.vw_get_hello import get_hello_router
 app.include_router(get_hello_router)
 
+# Run the application
+if __name__ == "__main__":
+    uvicorn.run(app, host="localhost", port=8000)
