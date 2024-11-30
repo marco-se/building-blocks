@@ -1,0 +1,19 @@
+[tool.poetry] # Poetry-Konfigurationsabschnitts
+name = "hello-world"
+version = "0.1.0"
+description = "Hello World with NiceGUI and FastAPI"
+authors = ["Dev-Team"]
+package-mode = false
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies] # Produktionsabhängigkeiten
+python = "^3.11"
+nicegui = "^2.7.0"
+pydantic = "^2.10.0"
+dependency-injector = "^4.43.0"
+
+[tool.poetry.group.dev.dependencies] # Entwicklungsabhängigkeiten
+
+[build-system] # Build-Konfiguration
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
